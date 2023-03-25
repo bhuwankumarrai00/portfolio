@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2B2D42;
+    color: #f8f8f8;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em;
+    background-color: #242538;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.list-items {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+
+.list-items a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.list-items a:hover {
+    color: #ec4e4e;
+}
+
+.fa-regular.fa-bars {
+    display: none;
+}
+
+/* ------------------------------------------------------ */
+
+.home-section , .mid-section , .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em;
+    margin-top: 4em;
+}
+
+.home-content {
+    max-width: 60vw;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.home-content p {
+    font-weight: 200;
+    max-width: 30vw;
+}
+
+.home-btn {
+    margin-top: 2em;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #f8f8f8;
+    background-color: red;
+    padding: 1em 2em;
+    display: inline-block;
+}
+
+.home-section-right , .mid-section-right , .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+}
+
+.circle.active {
+    background-color: red;
+}
+.line {
+    height: 4em;
+    width: 0.07em;
+    background-color: #fff;
+}
+
+.mid-section {
+    display: flex;
+    padding: 1em 4em;
+    margin-top: 7em;
+}
+
+.mid-section h1 {
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #ff0000;
+}
+
+.mid-section h1::after {
+    content: "";
+    display: block;
+    height: 0.1em;
+    width: 2em;
+    background-color: red;
+}
+
+
+.skill-card-container {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card {
+    height: 14em;
+    width: 14em;
+    box-shadow: 0em 1em 2em 0em #23253A;
+    padding: 1em;
+}
+
+.card i {
+    color: red;
+}
+
+
+.footer-btn {
+    margin-top: 2em;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #f8f8f8;
+    background-color: red;
+    padding: 1em 2em;
+    align-self: flex-end;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction:column;
+    justify-content:right;
+    align-items:flex-start;
+    padding: em 4em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input[type="email"] , textarea {
+    background-color: #191b30;
+    padding: 1em;
+}
+
+textarea {
+    overflow: hidden;
+    width: 12em;
+    height: 4em;
+}
+
+@media (max-width:500px){
+    * {
+        display:block;
+    }
+}
+
+@media screen and (max-width: 832px) {
+    .fa-regular.fa-bars {
+        display: initial;
+        font-size: 2em;
+    }
+
+    .list-items {
+        display: none;
+    }
+}
